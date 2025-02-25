@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery UI Tooltip Example</title>
+
+    <!-- Include jQuery and jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- Include jQuery and jQuery UI JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+
+    <h2>jQuery UI Tooltip Example</h2>
+
+    <p title="First Paragraph.">Hover over this paragraph to see the tooltip.</p>
+    <button title="Click me ">Hover over the button to see the tooltip.</button>
+    <a href="#" title="This is a link tooltip.">Hover over this link to see the tooltip.</a>
+
+    <script>
+        $(document).ready(function() {
+            $("p, button, a").tooltip();
+        });
+    </script>
+
+</body>
+</html>
+

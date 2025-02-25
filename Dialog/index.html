@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Dialog - Triggered by Button</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+</head>
+
+<body>
+
+<button id="openDialogButton">Open Dialog</button>
+
+<div id="dialog" title="Triggered Dialog">
+  <p>This is a dialog that appears when you click the "Open Dialog" button.</p>
+</div>
+
+<script>
+$(function() {
+    $("#dialog").dialog({
+      autoOpen: false 
+    });
+
+    $("#openDialogButton").click(function() {
+      $("#dialog").dialog("open");
+    });
+  });
+  </script>
+
+</body>
+</html>
